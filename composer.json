@@ -1,0 +1,33 @@
+{
+  "name": "Alexander1000/beauty-framework",
+  "description": "beauty-framework",
+  "authors": [
+    {
+      "name": "Alexander Dankovtsev",
+      "email": "a.dankovtsev@mail.ru"
+    }
+  ],
+  "config": {
+    "secure-http": false
+  },
+  "repositories": [
+    { "packagist": false },
+    { "type": "composer", "url": "http://packages.beauty-recommend.ru" }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1",
+    "twig/twig": "2.4.4",
+
+    "psr/log": "~1.0",
+    "psr/http-message": "~1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src"
+    }
+  }
+}
