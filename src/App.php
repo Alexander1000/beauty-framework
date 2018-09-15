@@ -17,14 +17,12 @@ final class App
     }
 
     /**
+     * @param RouterInterface $router
      * @param Request $request
      * @return Http\ResponseInterface
      */
-    public function process(Request $request): Http\ResponseInterface
+    public function process(RouterInterface $router, Request $request): Http\ResponseInterface
     {
-        /** @var Router $router */
-        $router = $this->container->get(Router::class);
-        $router->setContainer($this->container);
         return $router->dispatch($request, $request->getUri());
     }
 }
