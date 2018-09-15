@@ -4,7 +4,7 @@ namespace Beauty;
 
 use Psr\Container\ContainerInterface;
 
-class Router implements RouterInterface
+abstract class Router implements RouterInterface
 {
     /**
      * @var array
@@ -48,14 +48,6 @@ class Router implements RouterInterface
      * @var ContainerInterface
      */
     private $container;
-
-    public function __construct(
-        string $basePath,
-        string $schema
-    ) {
-        $this->basePath = $basePath;
-        $this->schema = $schema;
-    }
 
     /**
      * @param ContainerInterface $container
@@ -165,14 +157,7 @@ class Router implements RouterInterface
     /**
      * {@inheritdoc}
      */
-    public function getRoutes(): array
-    {
-        if (empty($this->routes)) {
-            $this->routes = yaml_parse_file(sprintf('%s%s/%s.yml', ROOT_PATH, $this->basePath, $this->schema));
-        }
-
-        return $this->routes;
-    }
+    abstract public function getRoutes(): array;
 
     /**
      * Получаем вложенный RouterInterface
