@@ -7,11 +7,6 @@ use Psr\Container\ContainerInterface;
 abstract class Router implements RouterInterface
 {
     /**
-     * @var array
-     */
-    protected $routes;
-
-    /**
      * @var string
      */
     protected $basePath;
