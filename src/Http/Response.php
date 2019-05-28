@@ -25,6 +25,16 @@ class Response implements ResponseInterface
     protected $body;
 
     /**
+     * @var \Beauty\Cookie
+     */
+    protected $cookie;
+
+    public function __construct(\Beauty\Cookie $cookie)
+    {
+        $this->cookie = $cookie;
+    }
+
+    /**
      * @param string $body
      * @return self
      */
@@ -51,6 +61,10 @@ class Response implements ResponseInterface
     {
         if (array_key_exists($this->httpCode, self::HTTP_MESSAGES)) {
             header(sprintf('HTTP/1.1 %d %s', $this->httpCode, self::HTTP_MESSAGES[$this->httpCode]));
+        }
+
+        foreach ($this->cookie->getCookieList() as $cookie) {
+            header(sprintf('Set-Cookie: %s', $cookie), false);
         }
 
         echo $this->body;

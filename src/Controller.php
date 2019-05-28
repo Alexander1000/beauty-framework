@@ -2,8 +2,6 @@
 
 namespace Beauty;
 
-use Psr\Log\LoggerInterface;
-
 abstract class Controller implements ControllerInterface
 {
     /**
@@ -53,7 +51,7 @@ abstract class Controller implements ControllerInterface
      */
     protected function getResponse(): Http\ResponseInterface
     {
-        return new Http\Response();
+        return new Http\Response($this->request->getCookie());
     }
 
     /**

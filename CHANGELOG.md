@@ -1,5 +1,8 @@
 # Changelog beauty-framework
 
+# 1.1.0
+  - Добавлен класс `Beauty\Cookie`
+
 # 1.0.0
   - Router - стал абстрактным
   - метод `Router::getRoutes()` абстрактный
