@@ -21,7 +21,7 @@ class Request implements RequestInterface
     private $post;
 
     /**
-     * @var array
+     * @var Cookie
      */
     private $cookie;
 
@@ -39,7 +39,7 @@ class Request implements RequestInterface
     {
         $this->get = $get;
         $this->post = $post;
-        $this->cookie = $cookie;
+        $this->cookie = new Cookie($cookie);
         $this->server = $server;
         $this->files = $files;
     }
@@ -142,5 +142,13 @@ class Request implements RequestInterface
         }
 
         throw new \InvalidArgumentException('Method not allowed');
+    }
+
+    /**
+     * @return Cookie
+     */
+    public function getCookie(): Cookie
+    {
+        return $this->cookie;
     }
 }
