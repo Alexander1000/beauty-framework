@@ -21,11 +21,12 @@ class Cookie
 
     /**
      * @param string $name
+     * @param string $default
      * @return string
      */
-    public function get(string $name): string
+    public function get(string $name, string $default = ''): string
     {
-        return $this->cookie[$name];
+        return $this->cookie[$name] ?? $default;
     }
 
     /**

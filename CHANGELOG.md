@@ -1,5 +1,8 @@
 # Changelog beauty-framework
 
+# 1.1.1
+  - Добавлено default значение если нету данных в cookie
+
 # 1.1.0
   - Добавлен класс `Beauty\Cookie`
 
