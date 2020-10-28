@@ -1,5 +1,8 @@
 # Changelog beauty-framework
 
+# 1.2.0
+  - Обновлены зависимости
+
 # 1.1.1
   - Добавлено default значение если нету данных в cookie
 

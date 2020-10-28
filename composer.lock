@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21e300e34299c4f45fdb66e6f7a3f153",
+    "content-hash": "e4ebe0c1b359f8b44c9f6a05c25f5b31",
     "packages": [
         {
             "name": "psr/http-message",
@@ -16,9 +16,9 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/psr/http-message/psr-http-message-f6561bf28d520154e4b0ec72be95418abe6d9363-zip-7ab320.tar",
+                "url": "http://packages.dankovtsev.pro/dist/psr/http-message/psr-http-message-f6561bf28d520154e4b0ec72be95418abe6d9363-zip-7ab320.tar",
                 "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "shasum": "52630b6379cbb723c0812800bcab14e2d0b1470d"
+                "shasum": "8ffbecb71d4f0a40b1f15f7c98108e47ed129177"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -60,17 +60,17 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/psr/log/psr-log-4ebe3a8bf773a19edfe0a84b6585ba3d401b724d-zip-6434e8.tar",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "shasum": "f54aac56d44cb7dfbe5673290eb682d72a8e8b13"
+                "url": "http://packages.dankovtsev.pro/dist/psr/log/psr-log-0f73288fd15629204f9d42b7055f72dacbe811fc-zip-eb4a75.tar",
+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
+                "shasum": "43260b4aefabc0cd14f8dc89972797883850d72c"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -78,7 +78,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -103,26 +103,104 @@
                 "psr-3"
             ],
             "support": {
-                "source": "https://github.com/php-fig/log/tree/1.0.2"
+                "source": "https://github.com/php-fig/log/tree/1.1.3"
             },
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2020-03-23T09:12:05+00:00"
         },
         {
-            "name": "symfony/polyfill-mbstring",
-            "version": "v1.9.0",
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.20.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "d0cd638f4634c16d8df4508e847f14e9e43168b8"
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "f4ba089a5b6366e453971d3aad5fe8e897b37f41"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/symfony/polyfill-mbstring/symfony-polyfill-mbstring-d0cd638f4634c16d8df4508e847f14e9e43168b8-zip-940b7f.tar",
-                "reference": "d0cd638f4634c16d8df4508e847f14e9e43168b8",
-                "shasum": "339eab1d5f315d9a4d445b55a5fad2f7655826cd"
+                "url": "http://packages.dankovtsev.pro/dist/symfony/polyfill-ctype/symfony-polyfill-ctype-f4ba089a5b6366e453971d3aad5fe8e897b37f41-zip-c100aa.tar",
+                "reference": "f4ba089a5b6366e453971d3aad5fe8e897b37f41",
+                "shasum": "8cebf32e8b7ce3ad00d2b56369228907c1877f56"
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.20-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.20.0"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/fabpot"
+                },
+                {
+                    "type": "tidelift",
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony"
+                },
+                {
+                    "type": "custom",
+                    "url": "https://symfony.com/sponsor"
+                }
+            ],
+            "time": "2020-10-23T14:02:19+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "39d483bdf39be819deabf04ec872eb0b2410b531"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "http://packages.dankovtsev.pro/dist/symfony/polyfill-mbstring/symfony-polyfill-mbstring-39d483bdf39be819deabf04ec872eb0b2410b531-zip-2e12fa.tar",
+                "reference": "39d483bdf39be819deabf04ec872eb0b2410b531",
+                "shasum": "d22892b5abc09d2190d7e1b80f6ce8edac80ba2b"
+            },
+            "require": {
+                "php": ">=7.1"
             },
             "suggest": {
                 "ext-mbstring": "For best performance"
@@ -130,7 +208,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-main": "1.20-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
                 }
             },
             "autoload": {
@@ -164,50 +246,61 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.9.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.20.0"
             },
-            "time": "2018-08-06T14:22:27+00:00"
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/fabpot"
+                },
+                {
+                    "type": "tidelift",
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony"
+                },
+                {
+                    "type": "custom",
+                    "url": "https://symfony.com/sponsor"
+                }
+            ],
+            "time": "2020-10-23T14:02:19+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v2.4.4",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb"
+                "reference": "b02fa41f3783a2616eccef7b92fbc2343ffed737"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/twig/twig/twig-twig-eddb97148ad779f27e670e1e3f19fb323aedafeb-zip-5d92eb.tar",
-                "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb",
-                "shasum": "67eb2c5d5a8eac241db11aeeb429eaf4f51acde0"
+                "url": "http://packages.dankovtsev.pro/dist/twig/twig/twig-twig-b02fa41f3783a2616eccef7b92fbc2343ffed737-zip-3ca2bf.tar",
+                "reference": "b02fa41f3783a2616eccef7b92fbc2343ffed737",
+                "shasum": "658bc9aa4c0e84796da3efcb8d2254ca51cc322f"
             },
             "require": {
-                "php": "^7.0",
-                "symfony/polyfill-mbstring": "~1.0"
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "^1.8",
+                "symfony/polyfill-mbstring": "^1.3"
             },
             "require-dev": {
                 "psr/container": "^1.0",
-                "symfony/debug": "~2.7",
-                "symfony/phpunit-bridge": "~3.3@dev"
+                "symfony/phpunit-bridge": "^4.4.9|^5.0.9"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Twig_": "lib/"
-                },
                 "psr-4": {
                     "Twig\\": "src/"
                 }
             },
             "autoload-dev": {
-                "psr-0": {
-                    "Twig_Tests_": "test/"
+                "psr-4": {
+                    "Twig\\Tests\\": "tests/"
                 }
             },
             "license": [
@@ -222,7 +315,6 @@
                 },
                 {
                     "name": "Twig Team",
-                    "homepage": "http://twig.sensiolabs.org/contributors",
                     "role": "Contributors"
                 },
                 {
@@ -232,42 +324,65 @@
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
-            "homepage": "http://twig.sensiolabs.org",
+            "homepage": "https://twig.symfony.com",
             "keywords": [
                 "templating"
             ],
             "support": {
-                "forum": "https://groups.google.com/forum/#!forum/twig-users",
-                "source": "https://github.com/twigphp/Twig/tree/v2.4.4",
+                "source": "https://github.com/twigphp/Twig/tree/v3.1.1",
                 "issues": "https://github.com/twigphp/Twig/issues"
             },
-            "time": "2017-09-27T18:10:31+00:00"
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/fabpot"
+                },
+                {
+                    "type": "tidelift",
+                    "url": "https://tidelift.com/funding/github/packagist/twig/twig"
+                },
+                {
+                    "type": "custom",
+                    "url": "https://symfony.com/cloud/"
+                },
+                {
+                    "type": "custom",
+                    "url": "https://live.symfony.com/"
+                },
+                {
+                    "type": "custom",
+                    "url": "https://certification.symfony.com/"
+                }
+            ],
+            "time": "2020-10-27T19:28:23+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
-            "version": "1.1.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda"
+                "reference": "f350df0268e904597e3bd9c4685c53e0e333feea"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/doctrine/instantiator/doctrine-instantiator-185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda-zip-b52616.tar",
-                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
-                "shasum": "f5e4ef079959a705d79a00bc5986d941af0fb720"
+                "url": "http://packages.dankovtsev.pro/dist/doctrine/instantiator/doctrine-instantiator-f350df0268e904597e3bd9c4685c53e0e333feea-zip-11a760.tar",
+                "reference": "f350df0268e904597e3bd9c4685c53e0e333feea",
+                "shasum": "c6d82eec6ee8cba19d3a2a8eaadd4817f8126b89"
             },
             "require": {
-                "php": "^7.1"
+                "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "athletic/athletic": "~0.1.8",
+                "doctrine/coding-standard": "^6.0",
                 "ext-pdo": "*",
                 "ext-phar": "*",
-                "phpunit/phpunit": "^6.2.3",
-                "squizlabs/php_codesniffer": "^3.0.2"
+                "phpbench/phpbench": "^0.13",
+                "phpstan/phpstan-phpunit": "^0.11",
+                "phpstan/phpstan-shim": "^0.11",
+                "phpunit/phpunit": "^7.0"
             },
             "type": "library",
             "extra": {
@@ -298,33 +413,47 @@
                 }
             ],
             "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
-            "homepage": "https://github.com/doctrine/instantiator",
+            "homepage": "https://www.doctrine-project.org/projects/instantiator.html",
             "keywords": [
                 "constructor",
                 "instantiate"
             ],
             "support": {
-                "source": "https://github.com/doctrine/instantiator/tree/1.1.0",
+                "source": "https://github.com/doctrine/instantiator/tree/1.3.1",
                 "issues": "https://github.com/doctrine/instantiator/issues"
             },
-            "time": "2017-07-22T11:58:36+00:00"
+            "funding": [
+                {
+                    "type": "patreon",
+                    "url": "https://www.patreon.com/phpdoctrine"
+                },
+                {
+                    "type": "tidelift",
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finstantiator"
+                },
+                {
+                    "type": "custom",
+                    "url": "https://www.doctrine-project.org/sponsorship.html"
+                }
+            ],
+            "time": "2020-05-29T17:27:14+00:00"
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.8.1",
+            "version": "1.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8"
+                "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/myclabs/deep-copy/myclabs-deep-copy-3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8-zip-1d5827.tar",
-                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
-                "shasum": "8341b33d638a95abb0ca7319d4a8a9610446f95b"
+                "url": "http://packages.dankovtsev.pro/dist/myclabs/deep-copy/myclabs-deep-copy-969b211f9a51aa1f6c01d1d2aef56d3bd91598e5-zip-1bc29d.tar",
+                "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5",
+                "shasum": "c1700197d4a417762ebce82443e11a889320c207"
             },
             "require": {
-                "php": "^7.1"
+                "php": "^7.1 || ^8.0"
             },
             "replace": {
                 "myclabs/deep-copy": "self.version"
@@ -361,35 +490,98 @@
                 "object graph"
             ],
             "support": {
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.8.1",
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.10.1",
                 "issues": "https://github.com/myclabs/DeepCopy/issues"
             },
-            "time": "2018-06-11T23:09:50+00:00"
+            "funding": [
+                {
+                    "type": "tidelift",
+                    "url": "https://tidelift.com/funding/github/packagist/myclabs/deep-copy"
+                }
+            ],
+            "time": "2020-06-29T13:22:24+00:00"
         },
         {
-            "name": "phar-io/manifest",
-            "version": "1.0.3",
+            "name": "nikic/php-parser",
+            "version": "v4.10.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phar-io/manifest.git",
-                "reference": "7761fcacf03b4d4f16e7ccb606d4879ca431fcf4"
+                "url": "git@github.com:nikic/PHP-Parser.git",
+                "reference": "658f1be311a230e0907f5dfe0213742aff0596de"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/phar-io/manifest/phar-io-manifest-7761fcacf03b4d4f16e7ccb606d4879ca431fcf4-zip-16fcd4.tar",
-                "reference": "7761fcacf03b4d4f16e7ccb606d4879ca431fcf4",
-                "shasum": "77a673bad366dd3f2615df66917092d6d99620c3"
+                "url": "http://packages.dankovtsev.pro/dist/nikic/php-parser/nikic-php-parser-658f1be311a230e0907f5dfe0213742aff0596de-zip-31bac8.tar",
+                "reference": "658f1be311a230e0907f5dfe0213742aff0596de",
+                "shasum": "4e6f395d9d3ca76a71010c1cfd4dce5d931faed8"
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "ircmaxell/php-yacc": "^0.0.7",
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "PhpParser\\": "test/PhpParser/"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2020-09-26T10:30:38+00:00"
+        },
+        {
+            "name": "phar-io/manifest",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phar-io/manifest.git",
+                "reference": "85265efd3af7ba3ca4b2a2c34dbfc5788dd29133"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "http://packages.dankovtsev.pro/dist/phar-io/manifest/phar-io-manifest-85265efd3af7ba3ca4b2a2c34dbfc5788dd29133-zip-e9d1de.tar",
+                "reference": "85265efd3af7ba3ca4b2a2c34dbfc5788dd29133",
+                "shasum": "5bb2bbb96d4c48fbcf672f99258d11558000a5e6"
             },
             "require": {
                 "ext-dom": "*",
                 "ext-phar": "*",
-                "phar-io/version": "^2.0",
-                "php": "^5.6 || ^7.0"
+                "ext-xmlwriter": "*",
+                "phar-io/version": "^3.0.1",
+                "php": "^7.2 || ^8.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -420,26 +612,26 @@
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
             "support": {
                 "issues": "https://github.com/phar-io/manifest/issues",
-                "source": "https://github.com/phar-io/manifest/tree/1.0.3"
+                "source": "https://github.com/phar-io/manifest/tree/2.0.1"
             },
-            "time": "2018-07-08T19:23:20+00:00"
+            "time": "2020-06-27T14:33:11+00:00"
         },
         {
             "name": "phar-io/version",
-            "version": "2.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phar-io/version.git",
-                "reference": "45a2ec53a73c70ce41d55cedef9063630abaf1b6"
+                "reference": "c6bb6825def89e0a32220f88337f8ceaf1975fa0"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/phar-io/version/phar-io-version-45a2ec53a73c70ce41d55cedef9063630abaf1b6-zip-8d9b61.tar",
-                "reference": "45a2ec53a73c70ce41d55cedef9063630abaf1b6",
-                "shasum": "ba12859333a112f7e91e8f01b30d47727b5d0474"
+                "url": "http://packages.dankovtsev.pro/dist/phar-io/version/phar-io-version-c6bb6825def89e0a32220f88337f8ceaf1975fa0-zip-532228.tar",
+                "reference": "c6bb6825def89e0a32220f88337f8ceaf1975fa0",
+                "shasum": "5edb405e36b93934cf7c496df8c949de19dc499a"
             },
             "require": {
-                "php": "^5.6 || ^7.0"
+                "php": "^7.2 || ^8.0"
             },
             "type": "library",
             "autoload": {
@@ -470,41 +662,36 @@
             "description": "Library for handling version information and constraints",
             "support": {
                 "issues": "https://github.com/phar-io/version/issues",
-                "source": "https://github.com/phar-io/version/tree/2.0.1"
+                "source": "https://github.com/phar-io/version/tree/3.0.2"
             },
-            "time": "2018-07-08T19:19:57+00:00"
+            "time": "2020-06-27T14:39:04+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
-            "version": "1.0.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6"
+                "url": "git@github.com:phpDocumentor/ReflectionCommon.git",
+                "reference": "1d01c49d4ed62f25aa84a747ad35d5a16924662b"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/phpdocumentor/reflection-common/phpdocumentor-reflection-common-21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6-zip-5ca449.tar",
-                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
-                "shasum": "5a1b845c009eaca76186d9ea2c70a8c2ae84d9a6"
+                "url": "http://packages.dankovtsev.pro/dist/phpdocumentor/reflection-common/phpdocumentor-reflection-common-1d01c49d4ed62f25aa84a747ad35d5a16924662b-zip-401c0c.tar",
+                "reference": "1d01c49d4ed62f25aa84a747ad35d5a16924662b",
+                "shasum": "2c16a79585c7a1d3c28c760fef62b81470c603a0"
             },
             "require": {
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.6"
+                "php": "^7.2 || ^8.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-2.x": "2.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src"
-                    ]
+                    "phpDocumentor\\Reflection\\": "src/"
                 }
             },
             "license": [
@@ -525,55 +712,46 @@
                 "reflection",
                 "static analysis"
             ],
-            "support": {
-                "source": "https://github.com/phpDocumentor/ReflectionCommon/tree/1.0.1",
-                "issues": "https://github.com/phpDocumentor/ReflectionCommon/issues"
-            },
-            "time": "2017-09-11T18:02:19+00:00"
+            "time": "2020-06-27T09:03:43+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "4.3.0",
+            "version": "5.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "94fd0001232e47129dd3504189fa1c7225010d08"
+                "url": "git@github.com:phpDocumentor/ReflectionDocBlock.git",
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/phpdocumentor/reflection-docblock/phpdocumentor-reflection-docblock-94fd0001232e47129dd3504189fa1c7225010d08-zip-9283bc.tar",
-                "reference": "94fd0001232e47129dd3504189fa1c7225010d08",
-                "shasum": "99c1e23ecf1da105d23e61fd8c32035d0335997d"
+                "url": "http://packages.dankovtsev.pro/dist/phpdocumentor/reflection-docblock/phpdocumentor-reflection-docblock-069a785b2141f5bcf49f3e353548dc1cce6df556-zip-d9fc00.tar",
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556",
+                "shasum": "f0dfcf18c303d0482316335c743233801b3832a6"
             },
             "require": {
-                "php": "^7.0",
-                "phpdocumentor/reflection-common": "^1.0.0",
-                "phpdocumentor/type-resolver": "^0.4.0",
-                "webmozart/assert": "^1.0"
+                "ext-filter": "*",
+                "php": "^7.2 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.2",
+                "phpdocumentor/type-resolver": "^1.3",
+                "webmozart/assert": "^1.9.1"
             },
             "require-dev": {
-                "doctrine/instantiator": "~1.0.5",
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^6.4"
+                "mockery/mockery": "~1.3.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.x-dev"
+                    "dev-master": "5.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src/"
-                    ]
+                    "phpDocumentor\\Reflection\\": "src"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "tests/unit"
-                    ]
+                    "phpDocumentor\\Reflection\\": "tests/unit"
                 }
             },
             "license": [
@@ -583,54 +761,52 @@
                 {
                     "name": "Mike van Riel",
                     "email": "me@mikevanriel.com"
+                },
+                {
+                    "name": "Jaap van Otterdijk",
+                    "email": "account@ijaap.nl"
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "support": {
-                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/4.3.0",
-                "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues"
-            },
-            "time": "2017-11-30T07:14:17+00:00"
+            "time": "2020-09-03T19:13:55+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "0.4.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
+                "url": "git@github.com:phpDocumentor/TypeResolver.git",
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/phpdocumentor/type-resolver/phpdocumentor-type-resolver-9c977708995954784726e25d0cd1dddf4e65b0f7-zip-28400d.tar",
-                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
-                "shasum": "6319913b2650a09a5bf1f9b040730827a9eadd58"
+                "url": "http://packages.dankovtsev.pro/dist/phpdocumentor/type-resolver/phpdocumentor-type-resolver-6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0-zip-f0df37.tar",
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
+                "shasum": "2afa0e1884f4a2f14394d23c256b68a3043745e0"
             },
             "require": {
-                "php": "^5.5 || ^7.0",
-                "phpdocumentor/reflection-common": "^1.0"
+                "php": "^7.2 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.0"
             },
             "require-dev": {
-                "mockery/mockery": "^0.9.4",
-                "phpunit/phpunit": "^5.2||^4.8.24"
+                "ext-tokenizer": "*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-1.x": "1.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src/"
-                    ]
+                    "phpDocumentor\\Reflection\\": "src"
                 }
             },
             "autoload-dev": {
                 "psr-4": {
                     "phpDocumentor\\Reflection\\": [
-                        "tests/unit"
+                        "tests/unit",
+                        "tests/benchmark"
                     ]
                 }
             },
@@ -643,46 +819,43 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "support": {
-                "source": "https://github.com/phpDocumentor/TypeResolver/tree/0.4.0",
-                "issues": "https://github.com/phpDocumentor/TypeResolver/issues"
-            },
-            "time": "2017-07-14T14:27:02+00:00"
+            "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
+            "time": "2020-09-17T18:55:26+00:00"
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.8.0",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06"
+                "reference": "8ce87516be71aae9b956f81906aaf0338e0d8a2d"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/phpspec/prophecy/phpspec-prophecy-4ba436b55987b4bf311cb7c6ba82aa528aac0a06-zip-cb340e.tar",
-                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
-                "shasum": "29a66d43e4f3613f9744b38684f80b3cb1016313"
+                "url": "http://packages.dankovtsev.pro/dist/phpspec/prophecy/phpspec-prophecy-8ce87516be71aae9b956f81906aaf0338e0d8a2d-zip-d283af.tar",
+                "reference": "8ce87516be71aae9b956f81906aaf0338e0d8a2d",
+                "shasum": "59c53cc8628685725073fe11c3ea70568e027cbf"
             },
             "require": {
-                "doctrine/instantiator": "^1.0.2",
-                "php": "^5.3|^7.0",
-                "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0",
-                "sebastian/comparator": "^1.1|^2.0|^3.0",
-                "sebastian/recursion-context": "^1.0|^2.0|^3.0"
+                "doctrine/instantiator": "^1.2",
+                "php": "^7.2 || ~8.0, <8.1",
+                "phpdocumentor/reflection-docblock": "^5.2",
+                "sebastian/comparator": "^3.0 || ^4.0",
+                "sebastian/recursion-context": "^3.0 || ^4.0"
             },
             "require-dev": {
-                "phpspec/phpspec": "^2.5|^3.2",
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5 || ^7.1"
+                "phpspec/phpspec": "^6.0",
+                "phpunit/phpunit": "^8.0 || ^9.0 <9.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8.x-dev"
+                    "dev-master": "1.11.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Prophecy\\": "src/"
+                "psr-4": {
+                    "Prophecy\\": "src/Prophecy"
                 }
             },
             "autoload-dev": {
@@ -715,52 +888,62 @@
                 "Stub"
             ],
             "support": {
-                "source": "https://github.com/phpspec/prophecy/tree/1.8.0",
+                "source": "https://github.com/phpspec/prophecy/tree/1.12.1",
                 "issues": "https://github.com/phpspec/prophecy/issues"
             },
-            "time": "2018-08-05T17:53:17+00:00"
+            "time": "2020-09-29T09:10:42+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "6.0.7",
+            "version": "9.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "865662550c384bc1db7e51d29aeda1c2c161d69a"
+                "reference": "229099d7d69fe5044f6e464f669b1fd34f252e8d"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/phpunit/php-code-coverage/phpunit-php-code-coverage-865662550c384bc1db7e51d29aeda1c2c161d69a-zip-0710cd.tar",
-                "reference": "865662550c384bc1db7e51d29aeda1c2c161d69a",
-                "shasum": "7d957b6a01720837750152a033d35931d46acd16"
+                "url": "http://packages.dankovtsev.pro/dist/phpunit/php-code-coverage/phpunit-php-code-coverage-229099d7d69fe5044f6e464f669b1fd34f252e8d-zip-96dd38.tar",
+                "reference": "229099d7d69fe5044f6e464f669b1fd34f252e8d",
+                "shasum": "940325e837a73428c4b0e9d75f17447f02e34d6c"
             },
             "require": {
                 "ext-dom": "*",
+                "ext-libxml": "*",
                 "ext-xmlwriter": "*",
-                "php": "^7.1",
-                "phpunit/php-file-iterator": "^2.0",
-                "phpunit/php-text-template": "^1.2.1",
-                "phpunit/php-token-stream": "^3.0",
-                "sebastian/code-unit-reverse-lookup": "^1.0.1",
-                "sebastian/environment": "^3.1",
-                "sebastian/version": "^2.0.1",
-                "theseer/tokenizer": "^1.1"
+                "nikic/php-parser": "^4.8",
+                "php": ">=7.3",
+                "phpunit/php-file-iterator": "^3.0.3",
+                "phpunit/php-text-template": "^2.0.2",
+                "sebastian/code-unit-reverse-lookup": "^2.0.2",
+                "sebastian/complexity": "^2.0",
+                "sebastian/environment": "^5.1.2",
+                "sebastian/lines-of-code": "^1.0",
+                "sebastian/version": "^3.0.1",
+                "theseer/tokenizer": "^1.2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.0"
+                "phpunit/phpunit": "^9.3"
             },
             "suggest": {
-                "ext-xdebug": "^2.6.0"
+                "ext-pcov": "*",
+                "ext-xdebug": "*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.0-dev"
+                    "dev-master": "9.2-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
+                ]
+            },
+            "autoload-dev": {
+                "files": [
+                    "tests/TestCase.php",
+                    "tests/_files/BankAccountTest.php"
                 ]
             },
             "license": [
@@ -782,31 +965,40 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/6.0.7"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.2"
             },
-            "time": "2018-06-01T07:51:50+00:00"
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/sebastianbergmann"
+                }
+            ],
+            "time": "2020-10-28T06:24:13+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "2.0.1",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c"
+                "url": "git@github.com:sebastianbergmann/php-file-iterator.git",
+                "reference": "aa4be8575f26070b100fccb67faabb28f21f66f8"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/phpunit/php-file-iterator/phpunit-php-file-iterator-cecbc684605bb0cc288828eb5d65d93d5c676d3c-zip-6cc7c7.tar",
-                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c",
-                "shasum": "60920aef3982aada109f98c64724cb988cd215dc"
+                "url": "http://packages.dankovtsev.pro/dist/phpunit/php-file-iterator/phpunit-php-file-iterator-aa4be8575f26070b100fccb67faabb28f21f66f8-zip-95adc7.tar",
+                "reference": "aa4be8575f26070b100fccb67faabb28f21f66f8",
+                "shasum": "dfd693d1e674c269c90b3dfe2bbd9a45f262fa99"
             },
             "require": {
-                "php": "^7.1"
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -831,29 +1023,96 @@
                 "iterator"
             ],
             "support": {
-                "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
-                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/2.0.1"
+                "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues"
             },
-            "time": "2018-06-11T11:44:00+00:00"
+            "time": "2020-09-28T05:57:25+00:00"
         },
         {
-            "name": "phpunit/php-text-template",
-            "version": "1.2.1",
+            "name": "phpunit/php-invoker",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-text-template.git",
-                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686"
+                "url": "git@github.com:sebastianbergmann/php-invoker.git",
+                "reference": "5a10147d0aaf65b58940a0b72f71c9ac0423cc67"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/phpunit/php-text-template/phpunit-php-text-template-31f8b717e51d9a2afca6c9f046f5d69fc27c8686-zip-c6bcbd.tar",
-                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
-                "shasum": "067d1266c7caefa5aa6070a38eb16580687cf8b6"
+                "url": "http://packages.dankovtsev.pro/dist/phpunit/php-invoker/phpunit-php-invoker-5a10147d0aaf65b58940a0b72f71c9ac0423cc67-zip-dd7635.tar",
+                "reference": "5a10147d0aaf65b58940a0b72f71c9ac0423cc67",
+                "shasum": "ed410dfe630b61e544fade9d91948b1eeb23c9ae"
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "ext-pcntl": "*",
+                "phpunit/phpunit": "^9.3"
+            },
+            "suggest": {
+                "ext-pcntl": "*"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "autoload-dev": {
+                "classmap": [
+                    "tests/_fixture/"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Invoke callables with a timeout",
+            "homepage": "https://github.com/sebastianbergmann/php-invoker/",
+            "keywords": [
+                "process"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/php-invoker/issues"
+            },
+            "time": "2020-09-28T05:58:55+00:00"
+        },
+        {
+            "name": "phpunit/php-text-template",
+            "version": "2.0.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:sebastianbergmann/php-text-template.git",
+                "reference": "5da5f67fc95621df9ff4c4e5a84d6a8a2acf7c28"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "http://packages.dankovtsev.pro/dist/phpunit/php-text-template/phpunit-php-text-template-5da5f67fc95621df9ff4c4e5a84d6a8a2acf7c28-zip-a8f0e6.tar",
+                "reference": "5da5f67fc95621df9ff4c4e5a84d6a8a2acf7c28",
+                "shasum": "c7c0b1fe739c9dde4a927a145557dd571271ef9b"
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -875,35 +1134,34 @@
                 "template"
             ],
             "support": {
-                "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
-                "source": "https://github.com/sebastianbergmann/php-text-template/tree/1.2.1"
+                "issues": "https://github.com/sebastianbergmann/php-text-template/issues"
             },
-            "time": "2015-06-21T13:50:34+00:00"
+            "time": "2020-10-26T05:33:50+00:00"
         },
         {
             "name": "phpunit/php-timer",
-            "version": "2.0.0",
+            "version": "5.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "8b8454ea6958c3dee38453d3bd571e023108c91f"
+                "url": "git@github.com:sebastianbergmann/php-timer.git",
+                "reference": "5a63ce20ed1b5bf577850e2c4e87f4aa902afbd2"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/phpunit/php-timer/phpunit-php-timer-8b8454ea6958c3dee38453d3bd571e023108c91f-zip-47533e.tar",
-                "reference": "8b8454ea6958c3dee38453d3bd571e023108c91f",
-                "shasum": "27f2bfd2f084a4da4105e551de2f16e6108d670e"
+                "url": "http://packages.dankovtsev.pro/dist/phpunit/php-timer/phpunit-php-timer-5a63ce20ed1b5bf577850e2c4e87f4aa902afbd2-zip-8b07c4.tar",
+                "reference": "5a63ce20ed1b5bf577850e2c4e87f4aa902afbd2",
+                "shasum": "ec0844dae7d5872c8f346e9b7cc0169b5b97a80b"
             },
             "require": {
-                "php": "^7.1"
+                "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.0"
+                "phpunit/phpunit": "^9.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "5.0-dev"
                 }
             },
             "autoload": {
@@ -927,112 +1185,61 @@
                 "timer"
             ],
             "support": {
-                "issues": "https://github.com/sebastianbergmann/php-timer/issues",
-                "source": "https://github.com/sebastianbergmann/php-timer/tree/2.0.0"
+                "issues": "https://github.com/sebastianbergmann/php-timer/issues"
             },
-            "time": "2018-02-01T13:07:23+00:00"
-        },
-        {
-            "name": "phpunit/php-token-stream",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "21ad88bbba7c3d93530d93994e0a33cd45f02ace"
-            },
-            "dist": {
-                "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/phpunit/php-token-stream/phpunit-php-token-stream-21ad88bbba7c3d93530d93994e0a33cd45f02ace-zip-dbd430.tar",
-                "reference": "21ad88bbba7c3d93530d93994e0a33cd45f02ace",
-                "shasum": "12c8f59ace562b7ba119e9f77ca0ac8fa5d836a2"
-            },
-            "require": {
-                "ext-tokenizer": "*",
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                }
-            ],
-            "description": "Wrapper around PHP's tokenizer extension.",
-            "homepage": "https://github.com/sebastianbergmann/php-token-stream/",
-            "keywords": [
-                "tokenizer"
-            ],
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/php-token-stream/issues",
-                "source": "https://github.com/sebastianbergmann/php-token-stream/tree/3.0.0"
-            },
-            "time": "2018-02-01T13:16:43+00:00"
+            "time": "2020-10-26T13:16:10+00:00"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.3.5",
+            "version": "9.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "7b331efabbb628c518c408fdfcaf571156775de2"
+                "reference": "3866b2eeeed21b1b099c4bc0b7a1690ac6fd5baa"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/phpunit/phpunit/phpunit-phpunit-7b331efabbb628c518c408fdfcaf571156775de2-zip-1ff66c.tar",
-                "reference": "7b331efabbb628c518c408fdfcaf571156775de2",
-                "shasum": "f62cc871bc6af4ff3fdf2b4dba93b69cc8d46354"
+                "url": "http://packages.dankovtsev.pro/dist/phpunit/phpunit/phpunit-phpunit-3866b2eeeed21b1b099c4bc0b7a1690ac6fd5baa-zip-e0b82b.tar",
+                "reference": "3866b2eeeed21b1b099c4bc0b7a1690ac6fd5baa",
+                "shasum": "047fcd4aea8a0fb994d89e30a3bfcfff3717754f"
             },
             "require": {
-                "doctrine/instantiator": "^1.1",
+                "doctrine/instantiator": "^1.3.1",
                 "ext-dom": "*",
                 "ext-json": "*",
                 "ext-libxml": "*",
                 "ext-mbstring": "*",
                 "ext-xml": "*",
-                "myclabs/deep-copy": "^1.7",
-                "phar-io/manifest": "^1.0.2",
-                "phar-io/version": "^2.0",
-                "php": "^7.1",
-                "phpspec/prophecy": "^1.7",
-                "phpunit/php-code-coverage": "^6.0.7",
-                "phpunit/php-file-iterator": "^2.0.1",
-                "phpunit/php-text-template": "^1.2.1",
-                "phpunit/php-timer": "^2.0",
-                "sebastian/comparator": "^3.0",
-                "sebastian/diff": "^3.0",
-                "sebastian/environment": "^3.1",
-                "sebastian/exporter": "^3.1",
-                "sebastian/global-state": "^2.0",
-                "sebastian/object-enumerator": "^3.0.3",
-                "sebastian/resource-operations": "^1.0",
-                "sebastian/version": "^2.0.1"
-            },
-            "conflict": {
-                "phpunit/phpunit-mock-objects": "*"
+                "ext-xmlwriter": "*",
+                "myclabs/deep-copy": "^1.10.1",
+                "phar-io/manifest": "^2.0.1",
+                "phar-io/version": "^3.0.2",
+                "php": ">=7.3",
+                "phpspec/prophecy": "^1.12.1",
+                "phpunit/php-code-coverage": "^9.2",
+                "phpunit/php-file-iterator": "^3.0.5",
+                "phpunit/php-invoker": "^3.1.1",
+                "phpunit/php-text-template": "^2.0.3",
+                "phpunit/php-timer": "^5.0.2",
+                "sebastian/cli-parser": "^1.0.1",
+                "sebastian/code-unit": "^1.0.6",
+                "sebastian/comparator": "^4.0.5",
+                "sebastian/diff": "^4.0.3",
+                "sebastian/environment": "^5.1.3",
+                "sebastian/exporter": "^4.0.3",
+                "sebastian/global-state": "^5.0.1",
+                "sebastian/object-enumerator": "^4.0.3",
+                "sebastian/resource-operations": "^3.0.3",
+                "sebastian/type": "^2.3",
+                "sebastian/version": "^3.0.2"
             },
             "require-dev": {
-                "ext-pdo": "*"
+                "ext-pdo": "*",
+                "phpspec/prophecy-phpunit": "^2.0.1"
             },
             "suggest": {
                 "ext-soap": "*",
-                "ext-xdebug": "*",
-                "phpunit/php-invoker": "^2.0"
+                "ext-xdebug": "*"
             },
             "bin": [
                 "phpunit"
@@ -1040,12 +1247,15 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.3-dev"
+                    "dev-master": "9.4-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
+                ],
+                "files": [
+                    "src/Framework/Assert/Functions.php"
                 ]
             },
             "autoload-dev": {
@@ -1053,7 +1263,6 @@
                     "tests/"
                 ],
                 "files": [
-                    "src/Framework/Assert/Functions.php",
                     "tests/_files/CoverageNamespacedFunctionTest.php",
                     "tests/_files/CoveredFunction.php",
                     "tests/_files/NamespaceCoveredFunction.php"
@@ -1078,34 +1287,149 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/7.3.5"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.4.2"
             },
-            "time": "2018-09-08T15:14:29+00:00"
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/sebastianbergmann"
+                },
+                {
+                    "type": "custom",
+                    "url": "https://phpunit.de/donate.html"
+                }
+            ],
+            "time": "2020-10-19T09:23:29+00:00"
         },
         {
-            "name": "sebastian/code-unit-reverse-lookup",
+            "name": "sebastian/cli-parser",
             "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/code-unit-reverse-lookup.git",
-                "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18"
+                "url": "git@github.com:sebastianbergmann/cli-parser.git",
+                "reference": "442e7c7e687e42adc03470c7b668bc4b2402c0b2"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/sebastian/code-unit-reverse-lookup/sebastian-code-unit-reverse-lookup-4419fcdb5eabb9caa61a27c7a1db532a6b55dd18-zip-2b8d33.tar",
-                "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
-                "shasum": "c5760406a30f6025b7fc9dcd616137c925185c8f"
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/cli-parser/sebastian-cli-parser-442e7c7e687e42adc03470c7b668bc4b2402c0b2-zip-ddd9ef.tar",
+                "reference": "442e7c7e687e42adc03470c7b668bc4b2402c0b2",
+                "shasum": "591711a1ce6d4c62735454aab97e5e84188261ab"
             },
             "require": {
-                "php": "^5.6 || ^7.0"
+                "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7 || ^6.0"
+                "phpunit/phpunit": "^9.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library for parsing CLI options",
+            "homepage": "https://github.com/sebastianbergmann/cli-parser",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/cli-parser/issues"
+            },
+            "time": "2020-09-28T06:08:49+00:00"
+        },
+        {
+            "name": "sebastian/code-unit",
+            "version": "1.0.8",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:sebastianbergmann/code-unit.git",
+                "reference": "1fc9f64c0927627ef78ba436c9b17d967e68e120"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/code-unit/sebastian-code-unit-1fc9f64c0927627ef78ba436c9b17d967e68e120-zip-a88a6a.tar",
+                "reference": "1fc9f64c0927627ef78ba436c9b17d967e68e120",
+                "shasum": "28b3fb3e95e27e727d6fc352bf38519845b7b3c5"
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "autoload-dev": {
+                "classmap": [
+                    "tests/_fixture"
+                ],
+                "files": [
+                    "tests/_fixture/file_with_multiple_code_units.php",
+                    "tests/_fixture/function.php"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Collection of value objects that represent the PHP code units",
+            "homepage": "https://github.com/sebastianbergmann/code-unit",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/code-unit/issues"
+            },
+            "time": "2020-10-26T13:08:54+00:00"
+        },
+        {
+            "name": "sebastian/code-unit-reverse-lookup",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:sebastianbergmann/code-unit-reverse-lookup.git",
+                "reference": "ac91f01ccec49fb77bdc6fd1e548bc70f7faa3e5"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/code-unit-reverse-lookup/sebastian-code-unit-reverse-lookup-ac91f01ccec49fb77bdc6fd1e548bc70f7faa3e5-zip-efc49f.tar",
+                "reference": "ac91f01ccec49fb77bdc6fd1e548bc70f7faa3e5",
+                "shasum": "e59bb4237f2cea8b6914c75276a41d5d335b3ca5"
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -1124,38 +1448,34 @@
             ],
             "description": "Looks up which function or method a line of code belongs to",
             "homepage": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/",
-            "support": {
-                "source": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/tree/1.0.1",
-                "issues": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/issues"
-            },
-            "time": "2017-03-04T06:30:41+00:00"
+            "time": "2020-09-28T05:30:19+00:00"
         },
         {
             "name": "sebastian/comparator",
-            "version": "3.0.2",
+            "version": "4.0.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "5de4fc177adf9bce8df98d8d141a7559d7ccf6da"
+                "url": "git@github.com:sebastianbergmann/comparator.git",
+                "reference": "55f4261989e546dc112258c7a75935a81a7ce382"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/sebastian/comparator/sebastian-comparator-5de4fc177adf9bce8df98d8d141a7559d7ccf6da-zip-bbaa6e.tar",
-                "reference": "5de4fc177adf9bce8df98d8d141a7559d7ccf6da",
-                "shasum": "2babe1fd552c68f278b75d1d7de87e9d8921a36e"
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/comparator/sebastian-comparator-55f4261989e546dc112258c7a75935a81a7ce382-zip-72b1f8.tar",
+                "reference": "55f4261989e546dc112258c7a75935a81a7ce382",
+                "shasum": "bdc51e0b523e247bdd893d3a792ab323061435fc"
             },
             "require": {
-                "php": "^7.1",
-                "sebastian/diff": "^3.0",
-                "sebastian/exporter": "^3.1"
+                "php": ">=7.3",
+                "sebastian/diff": "^4.0",
+                "sebastian/exporter": "^4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.1"
+                "phpunit/phpunit": "^9.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -1196,37 +1516,82 @@
                 "compare",
                 "equality"
             ],
-            "support": {
-                "source": "https://github.com/sebastianbergmann/comparator/tree/3.0.2",
-                "issues": "https://github.com/sebastianbergmann/comparator/issues"
-            },
-            "time": "2018-07-12T15:12:46+00:00"
+            "time": "2020-10-26T15:49:45+00:00"
         },
         {
-            "name": "sebastian/diff",
-            "version": "3.0.1",
+            "name": "sebastian/complexity",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "366541b989927187c4ca70490a35615d3fef2dce"
+                "url": "git@github.com:sebastianbergmann/complexity.git",
+                "reference": "739b35e53379900cc9ac327b2147867b8b6efd88"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/sebastian/diff/sebastian-diff-366541b989927187c4ca70490a35615d3fef2dce-zip-2beeda.tar",
-                "reference": "366541b989927187c4ca70490a35615d3fef2dce",
-                "shasum": "d06ec0e3dca3a4e88ffd5ef98e468841274aec96"
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/complexity/sebastian-complexity-739b35e53379900cc9ac327b2147867b8b6efd88-zip-7eebe0.tar",
+                "reference": "739b35e53379900cc9ac327b2147867b8b6efd88",
+                "shasum": "dbc49553fbb5f4c3328e0bc8de5da9ce6cadc598"
             },
             "require": {
-                "php": "^7.1"
+                "nikic/php-parser": "^4.7",
+                "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.0",
-                "symfony/process": "^2 || ^3.3 || ^4"
+                "phpunit/phpunit": "^9.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library for calculating the complexity of PHP code units",
+            "homepage": "https://github.com/sebastianbergmann/complexity",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/complexity/issues"
+            },
+            "time": "2020-10-26T15:52:27+00:00"
+        },
+        {
+            "name": "sebastian/diff",
+            "version": "4.0.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:sebastianbergmann/diff.git",
+                "reference": "3461e3fccc7cfdfc2720be910d3bd73c69be590d"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/diff/sebastian-diff-3461e3fccc7cfdfc2720be910d3bd73c69be590d-zip-d64718.tar",
+                "reference": "3461e3fccc7cfdfc2720be910d3bd73c69be590d",
+                "shasum": "3ab9ce4462a36dacf214356faa64890b1943010e"
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3",
+                "symfony/process": "^4.2 || ^5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -1260,36 +1625,35 @@
                 "unidiff",
                 "unified diff"
             ],
-            "support": {
-                "source": "https://github.com/sebastianbergmann/diff/tree/3.0.1",
-                "issues": "https://github.com/sebastianbergmann/diff/issues"
-            },
-            "time": "2018-06-10T07:54:39+00:00"
+            "time": "2020-10-26T13:10:38+00:00"
         },
         {
             "name": "sebastian/environment",
-            "version": "3.1.0",
+            "version": "5.1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "cd0871b3975fb7fc44d11314fd1ee20925fce4f5"
+                "url": "git@github.com:sebastianbergmann/environment.git",
+                "reference": "388b6ced16caa751030f6a69e588299fa09200ac"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/sebastian/environment/sebastian-environment-cd0871b3975fb7fc44d11314fd1ee20925fce4f5-zip-b6a43c.tar",
-                "reference": "cd0871b3975fb7fc44d11314fd1ee20925fce4f5",
-                "shasum": "dfda9d6184473efa79e5cb809e799df752fc1371"
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/environment/sebastian-environment-388b6ced16caa751030f6a69e588299fa09200ac-zip-1884fa.tar",
+                "reference": "388b6ced16caa751030f6a69e588299fa09200ac",
+                "shasum": "5abe735222277544506e7e7164ed38b45551641a"
             },
             "require": {
-                "php": "^7.0"
+                "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.1"
+                "phpunit/phpunit": "^9.3"
+            },
+            "suggest": {
+                "ext-posix": "*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1.x-dev"
+                    "dev-master": "5.1-dev"
                 }
             },
             "autoload": {
@@ -1313,38 +1677,34 @@
                 "hhvm",
                 "xdebug"
             ],
-            "support": {
-                "source": "https://github.com/sebastianbergmann/environment/tree/3.1.0",
-                "issues": "https://github.com/sebastianbergmann/environment/issues"
-            },
-            "time": "2017-07-01T08:51:00+00:00"
+            "time": "2020-09-28T05:52:38+00:00"
         },
         {
             "name": "sebastian/exporter",
-            "version": "3.1.0",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "234199f4528de6d12aaa58b612e98f7d36adb937"
+                "url": "git@github.com:sebastianbergmann/exporter.git",
+                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/sebastian/exporter/sebastian-exporter-234199f4528de6d12aaa58b612e98f7d36adb937-zip-ba849f.tar",
-                "reference": "234199f4528de6d12aaa58b612e98f7d36adb937",
-                "shasum": "235e8c4d2594e5a3afe4ab890d81edd4e8189117"
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/exporter/sebastian-exporter-d89cc98761b8cb5a1a235a6b703ae50d34080e65-zip-12666d.tar",
+                "reference": "d89cc98761b8cb5a1a235a6b703ae50d34080e65",
+                "shasum": "aecb59ca7c60751ca62342625be8fa7ba0f89e96"
             },
             "require": {
-                "php": "^7.0",
-                "sebastian/recursion-context": "^3.0"
+                "php": ">=7.3",
+                "sebastian/recursion-context": "^4.0"
             },
             "require-dev": {
                 "ext-mbstring": "*",
-                "phpunit/phpunit": "^6.0"
+                "phpunit/phpunit": "^9.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1.x-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -1374,7 +1734,7 @@
                 },
                 {
                     "name": "Bernhard Schussek",
-                    "email": "bschussek@2bepublished.at"
+                    "email": "bschussek@gmail.com"
                 }
             ],
             "description": "Provides the functionality to export PHP variables for visualization",
@@ -1383,31 +1743,30 @@
                 "export",
                 "exporter"
             ],
-            "support": {
-                "source": "https://github.com/sebastianbergmann/exporter/tree/3.1.0",
-                "issues": "https://github.com/sebastianbergmann/exporter/issues"
-            },
-            "time": "2017-04-03T13:19:02+00:00"
+            "time": "2020-09-28T05:24:23+00:00"
         },
         {
             "name": "sebastian/global-state",
-            "version": "2.0.0",
+            "version": "5.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/global-state.git",
-                "reference": "e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4"
+                "url": "git@github.com:sebastianbergmann/global-state.git",
+                "reference": "a90ccbddffa067b51f574dea6eb25d5680839455"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/sebastian/global-state/sebastian-global-state-e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4-zip-51dbeb.tar",
-                "reference": "e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4",
-                "shasum": "523d089a0ac34a6acfd04bbfce92095a08767c4a"
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/global-state/sebastian-global-state-a90ccbddffa067b51f574dea6eb25d5680839455-zip-cd5da4.tar",
+                "reference": "a90ccbddffa067b51f574dea6eb25d5680839455",
+                "shasum": "a1b9ce3e74fe620cd35208b00d0b139cf9b4c7ef"
             },
             "require": {
-                "php": "^7.0"
+                "php": ">=7.3",
+                "sebastian/object-reflector": "^2.0",
+                "sebastian/recursion-context": "^4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.0"
+                "ext-dom": "*",
+                "phpunit/phpunit": "^9.3"
             },
             "suggest": {
                 "ext-uopz": "*"
@@ -1415,7 +1774,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "5.0-dev"
                 }
             },
             "autoload": {
@@ -1445,38 +1804,83 @@
             "keywords": [
                 "global state"
             ],
-            "support": {
-                "source": "https://github.com/sebastianbergmann/global-state/tree/2.0.0",
-                "issues": "https://github.com/sebastianbergmann/global-state/issues"
-            },
-            "time": "2017-04-27T15:39:26+00:00"
+            "time": "2020-10-26T15:55:19+00:00"
         },
         {
-            "name": "sebastian/object-enumerator",
-            "version": "3.0.3",
+            "name": "sebastian/lines-of-code",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/object-enumerator.git",
-                "reference": "7cfd9e65d11ffb5af41198476395774d4c8a84c5"
+                "url": "git@github.com:sebastianbergmann/lines-of-code.git",
+                "reference": "acf76492a65401babcf5283296fa510782783a7a"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/sebastian/object-enumerator/sebastian-object-enumerator-7cfd9e65d11ffb5af41198476395774d4c8a84c5-zip-360ba9.tar",
-                "reference": "7cfd9e65d11ffb5af41198476395774d4c8a84c5",
-                "shasum": "94704fc1cb76fd8635d1ab6d0d7600be3b63b690"
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/lines-of-code/sebastian-lines-of-code-acf76492a65401babcf5283296fa510782783a7a-zip-1c7261.tar",
+                "reference": "acf76492a65401babcf5283296fa510782783a7a",
+                "shasum": "c45e48c2cb71243266bee4709bb16b2bed91bcf0"
             },
             "require": {
-                "php": "^7.0",
-                "sebastian/object-reflector": "^1.1.1",
-                "sebastian/recursion-context": "^3.0"
+                "nikic/php-parser": "^4.6",
+                "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.0"
+                "phpunit/phpunit": "^9.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library for counting the lines of code in PHP source code",
+            "homepage": "https://github.com/sebastianbergmann/lines-of-code",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/lines-of-code/issues"
+            },
+            "time": "2020-10-26T17:03:56+00:00"
+        },
+        {
+            "name": "sebastian/object-enumerator",
+            "version": "4.0.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:sebastianbergmann/object-enumerator.git",
+                "reference": "5c9eeac41b290a3712d88851518825ad78f45c71"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/object-enumerator/sebastian-object-enumerator-5c9eeac41b290a3712d88851518825ad78f45c71-zip-c94118.tar",
+                "reference": "5c9eeac41b290a3712d88851518825ad78f45c71",
+                "shasum": "10562f53b56775ba8966698361b999330caa1fbe"
+            },
+            "require": {
+                "php": ">=7.3",
+                "sebastian/object-reflector": "^2.0",
+                "sebastian/recursion-context": "^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -1500,36 +1904,32 @@
             ],
             "description": "Traverses array structures and object graphs to enumerate all referenced objects",
             "homepage": "https://github.com/sebastianbergmann/object-enumerator/",
-            "support": {
-                "source": "https://github.com/sebastianbergmann/object-enumerator/tree/3.0.3",
-                "issues": "https://github.com/sebastianbergmann/object-enumerator/issues"
-            },
-            "time": "2017-08-03T12:35:26+00:00"
+            "time": "2020-10-26T13:12:22+00:00"
         },
         {
             "name": "sebastian/object-reflector",
-            "version": "1.1.1",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/object-reflector.git",
-                "reference": "773f97c67f28de00d397be301821b06708fca0be"
+                "url": "git@github.com:sebastianbergmann/object-reflector.git",
+                "reference": "b4f479ebdbf63ac605d183ece17d8d7fe49c15c7"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/sebastian/object-reflector/sebastian-object-reflector-773f97c67f28de00d397be301821b06708fca0be-zip-56c4ab.tar",
-                "reference": "773f97c67f28de00d397be301821b06708fca0be",
-                "shasum": "3793c62ccf15ea146674d1b8ee77de225cbc1896"
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/object-reflector/sebastian-object-reflector-b4f479ebdbf63ac605d183ece17d8d7fe49c15c7-zip-4a6333.tar",
+                "reference": "b4f479ebdbf63ac605d183ece17d8d7fe49c15c7",
+                "shasum": "039eb4c229ed4df1f54f49a9ad4754e5dd151f0d"
             },
             "require": {
-                "php": "^7.0"
+                "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.0"
+                "phpunit/phpunit": "^9.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -1553,36 +1953,32 @@
             ],
             "description": "Allows reflection of object attributes, including inherited and non-public ones",
             "homepage": "https://github.com/sebastianbergmann/object-reflector/",
-            "support": {
-                "source": "https://github.com/sebastianbergmann/object-reflector/tree/1.1.1",
-                "issues": "https://github.com/sebastianbergmann/object-reflector/issues"
-            },
-            "time": "2017-03-29T09:07:27+00:00"
+            "time": "2020-10-26T13:14:26+00:00"
         },
         {
             "name": "sebastian/recursion-context",
-            "version": "3.0.0",
+            "version": "4.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/recursion-context.git",
-                "reference": "5b0cd723502bac3b006cbf3dbf7a1e3fcefe4fa8"
+                "url": "git@github.com:sebastianbergmann/recursion-context.git",
+                "reference": "cd9d8cf3c5804de4341c283ed787f099f5506172"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/sebastian/recursion-context/sebastian-recursion-context-5b0cd723502bac3b006cbf3dbf7a1e3fcefe4fa8-zip-ab6a2f.tar",
-                "reference": "5b0cd723502bac3b006cbf3dbf7a1e3fcefe4fa8",
-                "shasum": "7629ebae6913de128868f1933ba27b601436cf42"
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/recursion-context/sebastian-recursion-context-cd9d8cf3c5804de4341c283ed787f099f5506172-zip-68f21b.tar",
+                "reference": "cd9d8cf3c5804de4341c283ed787f099f5506172",
+                "shasum": "7298fcd691cdc813e6335d7e98ff7635b1ab1d6a"
             },
             "require": {
-                "php": "^7.0"
+                "php": ">=7.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.0"
+                "phpunit/phpunit": "^9.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -1609,33 +2005,32 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
-            "support": {
-                "source": "https://github.com/sebastianbergmann/recursion-context/tree/3.0.0",
-                "issues": "https://github.com/sebastianbergmann/recursion-context/issues"
-            },
-            "time": "2017-03-03T06:23:57+00:00"
+            "time": "2020-10-26T13:17:30+00:00"
         },
         {
             "name": "sebastian/resource-operations",
-            "version": "1.0.0",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/resource-operations.git",
-                "reference": "ce990bb21759f94aeafd30209e8cfcdfa8bc3f52"
+                "url": "git@github.com:sebastianbergmann/resource-operations.git",
+                "reference": "0f4443cb3a1d92ce809899753bc0d5d5a8dd19a8"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/sebastian/resource-operations/sebastian-resource-operations-ce990bb21759f94aeafd30209e8cfcdfa8bc3f52-zip-4a3a08.tar",
-                "reference": "ce990bb21759f94aeafd30209e8cfcdfa8bc3f52",
-                "shasum": "9633270b66cedf00f5678a92b9d0935495eb4210"
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/resource-operations/sebastian-resource-operations-0f4443cb3a1d92ce809899753bc0d5d5a8dd19a8-zip-d2e7c8.tar",
+                "reference": "0f4443cb3a1d92ce809899753bc0d5d5a8dd19a8",
+                "shasum": "e718141757d30882d8e95b4d738f43ad91afd3b2"
             },
             "require": {
-                "php": ">=5.6.0"
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -1654,33 +2049,85 @@
             ],
             "description": "Provides a list of PHP built-in functions that operate on resources",
             "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
-            "support": {
-                "source": "https://github.com/sebastianbergmann/resource-operations/tree/1.0.0",
-                "issues": "https://github.com/sebastianbergmann/resource-operations/issues"
-            },
-            "time": "2015-07-28T20:34:47+00:00"
+            "time": "2020-09-28T06:45:17+00:00"
         },
         {
-            "name": "sebastian/version",
-            "version": "2.0.1",
+            "name": "sebastian/type",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/version.git",
-                "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019"
+                "url": "git@github.com:sebastianbergmann/type.git",
+                "reference": "81cd61ab7bbf2de744aba0ea61fae32f721df3d2"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/sebastian/version/sebastian-version-99732be0ddb3361e16ad77b68ba41efc8e979019-zip-0eee83.tar",
-                "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019",
-                "shasum": "eb361f31a50a2cbc5c9fdbd09d4a18681833dd7a"
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/type/sebastian-type-81cd61ab7bbf2de744aba0ea61fae32f721df3d2-zip-3b70b3.tar",
+                "reference": "81cd61ab7bbf2de744aba0ea61fae32f721df3d2",
+                "shasum": "41371295e01ae8c6c16b05b5df315d4a20a48b0e"
             },
             "require": {
-                "php": ">=5.6"
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "autoload-dev": {
+                "classmap": [
+                    "tests/_fixture"
+                ],
+                "files": [
+                    "tests/_fixture/callback_function.php"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Collection of value objects that represent the types of the PHP type system",
+            "homepage": "https://github.com/sebastianbergmann/type",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/type/issues"
+            },
+            "time": "2020-10-26T13:18:59+00:00"
+        },
+        {
+            "name": "sebastian/version",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:sebastianbergmann/version.git",
+                "reference": "c6c1022351a901512170118436c764e473f6de8c"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "http://packages.dankovtsev.pro/dist/sebastian/version/sebastian-version-c6c1022351a901512170118436c764e473f6de8c-zip-6f18cf.tar",
+                "reference": "c6c1022351a901512170118436c764e473f6de8c",
+                "shasum": "2766d816e6f7fe70821c24d2f218e96a581fb836"
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -1701,30 +2148,29 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "support": {
-                "issues": "https://github.com/sebastianbergmann/version/issues",
-                "source": "https://github.com/sebastianbergmann/version/tree/2.0.1"
+                "issues": "https://github.com/sebastianbergmann/version/issues"
             },
-            "time": "2016-10-03T07:35:21+00:00"
+            "time": "2020-09-28T06:39:44+00:00"
         },
         {
             "name": "theseer/tokenizer",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/theseer/tokenizer.git",
-                "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b"
+                "url": "git@github.com:theseer/tokenizer.git",
+                "reference": "75a63c33a8577608444246075ea0af0d052e452a"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/theseer/tokenizer/theseer-tokenizer-cb2f008f3f05af2893a87208fe6a6c4985483f8b-zip-1b9019.tar",
-                "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b",
-                "shasum": "5a7e3180e01f2105cfdb0a8866ac0d8503930e3c"
+                "url": "http://packages.dankovtsev.pro/dist/theseer/tokenizer/theseer-tokenizer-75a63c33a8577608444246075ea0af0d052e452a-zip-4eecac.tar",
+                "reference": "75a63c33a8577608444246075ea0af0d052e452a",
+                "shasum": "140bc78a91243597c43536240bb0a69bcd9b719d"
             },
             "require": {
                 "ext-dom": "*",
                 "ext-tokenizer": "*",
                 "ext-xmlwriter": "*",
-                "php": "^7.0"
+                "php": "^7.2 || ^8.0"
             },
             "type": "library",
             "autoload": {
@@ -1744,38 +2190,36 @@
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
             "support": {
-                "issues": "https://github.com/theseer/tokenizer/issues",
-                "source": "https://github.com/theseer/tokenizer/tree/1.1.0"
+                "issues": "https://github.com/theseer/tokenizer/issues"
             },
-            "time": "2017-04-07T12:08:54+00:00"
+            "time": "2020-07-12T23:59:07+00:00"
         },
         {
             "name": "webmozart/assert",
-            "version": "1.3.0",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a"
+                "url": "git@github.com:webmozart/assert.git",
+                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://packages.beauty-recommend.ru/dist/webmozart/assert/webmozart-assert-0df1908962e7a3071564e857d86874dad1ef204a-zip-a286c0.tar",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a",
-                "shasum": "05b02d191bc560cb415aaee46d4028185f9497a8"
+                "url": "http://packages.dankovtsev.pro/dist/webmozart/assert/webmozart-assert-bafc69caeb4d49c39fd0779086c03a3738cbb389-zip-421c7f.tar",
+                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "shasum": "b5546e596314c472c6f77d1703b3f670c73fd2f1"
             },
             "require": {
-                "php": "^5.3.3 || ^7.0"
+                "php": "^5.3.3 || ^7.0 || ^8.0",
+                "symfony/polyfill-ctype": "^1.8"
+            },
+            "conflict": {
+                "phpstan/phpstan": "<0.12.20",
+                "vimeo/psalm": "<3.9.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.6",
-                "sebastian/version": "^1.0.1"
+                "phpunit/phpunit": "^4.8.36 || ^7.5.13"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Webmozart\\Assert\\": "src/"
@@ -1783,7 +2227,8 @@
             },
             "autoload-dev": {
                 "psr-4": {
-                    "Webmozart\\Assert\\Tests\\": "tests/"
+                    "Webmozart\\Assert\\Tests\\": "tests/",
+                    "Webmozart\\Assert\\Bin\\": "bin/src"
                 }
             },
             "license": [
@@ -1801,11 +2246,7 @@
                 "check",
                 "validate"
             ],
-            "support": {
-                "source": "https://github.com/webmozart/assert/tree/1.3.0",
-                "issues": "https://github.com/webmozart/assert/issues"
-            },
-            "time": "2018-01-29T19:49:41+00:00"
+            "time": "2020-07-08T17:02:28+00:00"
         }
     ],
     "aliases": [],
@@ -1814,7 +2255,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1"
+        "php": ">=8.0"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }

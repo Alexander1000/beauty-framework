@@ -27,8 +27,8 @@ class Html extends View
      */
     public function render(): string
     {
-        $loader = new \Twig_Loader_Filesystem([$this->theme], ROOT_PATH . '/templates');
-        $twigEnv = new \Twig_Environment($loader);
+        $loader = new \Twig\Loader\FilesystemLoader([$this->theme], ROOT_PATH . '/templates');
+        $twigEnv = new \Twig\Environment($loader);
         return $twigEnv->render($this->template . '.html', $this->context);
     }
 }
