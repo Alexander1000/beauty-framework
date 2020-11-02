@@ -15,6 +15,7 @@ class Response implements ResponseInterface
         self::HTTP_CODE_NOT_FOUND => 'Not found',
         self::HTTP_CODE_INTERNAL_ERROR => 'Internal error',
         301 => 'Moved Permanently',
+        302 => 'Found',
     ];
 
     protected int $httpCode = self::HTTP_CODE_OK;
