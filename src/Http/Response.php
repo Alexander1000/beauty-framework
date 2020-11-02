@@ -1,33 +1,29 @@
-<?php declare(strict_types = 1);
+<?php
+
+declare(strict_types = 1);
 
 namespace Beauty\Http;
 
 class Response implements ResponseInterface
 {
-    const HTTP_CODE_OK = 200;
-    const HTTP_CODE_NOT_FOUND = 404;
-    const HTTP_CODE_INTERNAL_ERROR = 500;
+    public const HTTP_CODE_OK = 200;
+    public const HTTP_CODE_NOT_FOUND = 404;
+    public const HTTP_CODE_INTERNAL_ERROR = 500;
 
-    const HTTP_MESSAGES = [
+    public const HTTP_MESSAGES = [
         self::HTTP_CODE_OK => 'OK',
         self::HTTP_CODE_NOT_FOUND => 'Not found',
         self::HTTP_CODE_INTERNAL_ERROR => 'Internal error',
+        301 => 'Moved Permanently',
     ];
 
-    /**
-     * @var int
-     */
-    protected $httpCode;
+    protected int $httpCode = self::HTTP_CODE_OK;
 
-    /**
-     * @var string
-     */
-    protected $body;
+    protected string $body = '';
 
-    /**
-     * @var \Beauty\Cookie
-     */
-    protected $cookie;
+    protected \Beauty\Cookie $cookie;
+
+    protected array $headers = [];
 
     public function __construct(\Beauty\Cookie $cookie)
     {
@@ -55,12 +51,27 @@ class Response implements ResponseInterface
     }
 
     /**
+     * @param string $name
+     * @param string $value
+     * @return $this
+     */
+    public function addHeader(string $name, string $value)
+    {
+        $this->headers[] = [$name, $value];
+        return $this;
+    }
+
+    /**
      * {@inheritdoc}
      */
     public function reply(): bool
     {
         if (array_key_exists($this->httpCode, self::HTTP_MESSAGES)) {
             header(sprintf('HTTP/1.1 %d %s', $this->httpCode, self::HTTP_MESSAGES[$this->httpCode]));
+        }
+
+        foreach ($this->headers as $headerData) {
+            header(sprintf('%s: %s', $headerData[0], $headerData[1]));
         }
 
         foreach ($this->cookie->getCookieList() as $cookie) {

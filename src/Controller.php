@@ -64,4 +64,16 @@ abstract class Controller implements ControllerInterface
             ->setCode($this->httpCode)
             ->setBody($view->render());
     }
+
+    /**
+     * @param string $location
+     * @param int $code
+     * @return Http\ResponseInterface
+     */
+    protected function redirect(string $location, int $code): Http\ResponseInterface
+    {
+        return $this->getResponse()
+            ->setCode($code)
+            ->addHeader('Location', $location);
+    }
 }

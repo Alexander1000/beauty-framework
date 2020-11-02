@@ -23,4 +23,11 @@ interface ResponseInterface
      * @return static
      */
     public function setCode(int $code);
+
+    /**
+     * @param string $name
+     * @param string $value
+     * @return $this
+     */
+    public function addHeader(string $name, string $value);
 }
